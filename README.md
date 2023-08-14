@@ -1,5 +1,5 @@
-# pic-pay-challenge
-<h1>PicPay challenge backend developed with Java and Spring Boot</h1>
+<h1>  pic-pay-challenge </h1><br>
+<h2>PicPay challenge backend developed with Java and Spring Boot</h2>
 <ul>
   <li>Technologies: </li>
   <li>Spring WEB</li>
