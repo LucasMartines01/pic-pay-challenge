@@ -1,7 +1,7 @@
 <h1>  pic-pay-challenge </h1><br>
 <h2>PicPay challenge backend developed with Java and Spring Boot</h2>
+<strong>Technologies:</strong>
 <ul>
-  <li>Technologies: </li>
   <li>Spring WEB</li>
   <li>Spring JPA</li>
   <li>Lombock</li>
