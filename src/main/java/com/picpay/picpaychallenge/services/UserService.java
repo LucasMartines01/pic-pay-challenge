@@ -37,13 +37,11 @@ public class UserService {
     }
 
     public boolean checkIfEmailOrCpfAlreadyExists(String cpf, String email){
-        return repository.findUserByCpf(cpf).isEmpty() && repository.findUserByCpf(email).isEmpty();
+        return repository.findUserByCpf(cpf).isEmpty() && repository.findUserByEmail(email).isEmpty();
     }
 
-    public void updateUsers(User payer, User payee){
-        List<User> users = new ArrayList<>();
-        users.add(payee);
-        users.add(payer);
+    public void updateUsers(List<User> users){
+
 
         repository.saveAll(users);
     }

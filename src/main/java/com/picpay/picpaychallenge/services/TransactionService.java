@@ -14,6 +14,8 @@ import org.springframework.web.client.RestTemplate;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -39,7 +41,11 @@ public class TransactionService {
         payer.setBalance(payer.getBalance().subtract(transactionDTO.value()));
         payee.setBalance(payee.getBalance().add(transactionDTO.value()));
 
-        userService.updateUsers(payer, payee);
+        List<User> users = new ArrayList<>();
+        users.add(payee);
+        users.add(payer);
+
+        userService.updateUsers(users);
 
         return new ResponseEntity(transactionDTO, HttpStatus.CREATED);
     }
