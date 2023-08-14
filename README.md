@@ -9,6 +9,6 @@
   <li>Bean Validation</li>
 </ul>
 
-<p>Challenge: </p> <a>https://github.com/PicPay/picpay-desafio-backend</a>
+<p>Challenge: https://github.com/PicPay/picpay-desafio-backend </p> 
 
 
